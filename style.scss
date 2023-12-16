@@ -1,0 +1,20 @@
+// vendors
+@import "scss/vendors/reset";
+
+// utils
+@import "scss/utils/vars";
+@import "scss/utils/mixins";
+
+// layout
+@import "scss/layout/base";
+
+// sections
+@import "scss/sections/meltem-section";
+
+// components
+@import "scss/components/header";
+@import "scss/components/footer";
+@import "scss/components/radioBtnLanguage";
+@import "scss/components/button";
+@import "scss/components/burger";
+@import "scss/components/modal";

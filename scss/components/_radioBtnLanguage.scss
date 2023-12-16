@@ -1,0 +1,39 @@
+.header {
+  &__languages {
+    display: flex;
+    input[type="radio"] {
+      display: none;
+
+      &:checked {
+        + .box {
+          background-color: var(--primary);
+          transition: var(--transition);
+          span {
+            color: var(--white);
+          }
+        }
+      }
+    }
+
+    .box {
+      padding: 8rem;
+      width: 30rem;
+      height: 30rem;
+      border-radius: 3px;
+
+      background-color: var(--white);
+      will-change: transition;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: var(--primary);
+      }
+    }
+  }
+}

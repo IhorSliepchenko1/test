@@ -1,0 +1,140 @@
+.modal {
+  transform: translateY(-200%);
+  margin-inline: auto;
+  display: grid;
+  max-width: 482rem;
+  padding: 60rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+  z-index: 999;
+  bottom: 450px;
+  position: relative;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__title {
+    color: var(--light-black);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40rem;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 20rem;
+  }
+
+  &__subtitle {
+    color: var(--light-black);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 40rem;
+  }
+
+  &__desc {
+    color: var(--light-black);
+    font-family: Roboto;
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__a {
+    color: var(--light-black);
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 15rem;
+  margin-bottom: 15rem;
+}
+
+.phone {
+  display: flex;
+  border-radius: 5rem;
+  border: 1rem solid var(--light-black);
+  gap: 15rem;
+  padding: 10rem 0 10rem 20rem;
+
+  &.empty-label {
+    border: 1rem solid red;
+  }
+
+  .empty-phone {
+    &::placeholder {
+      color: red;
+    }
+  }
+  input {
+    border: 0;
+    &::placeholder {
+      color: var(--light-black);
+      font-family: var(--ff-r);
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+
+.name {
+  border-radius: 5rem;
+  border: 1rem solid var(--light-black);
+  padding: 10rem 0 10rem 20rem;
+
+  &::placeholder {
+    color: var(--light-black);
+    font-family: var(--ff-r);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.submit {
+  border-radius: 5rem;
+  background: var(--primary);
+  border: 0;
+  color: var(--white);
+  font-family: var(--ff-r);
+  font-size: 16rem;
+  font-weight: 500;
+  letter-spacing: 0.16rem;
+  padding: 13rem 0;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1rem solid transparent;
+  &:hover {
+    border: 1rem solid var(--primary);
+    background-color: var(--white);
+    color: var(--primary);
+  }
+}
+
+.close-modal {
+  text-align: end;
+  cursor: pointer;
+}
+
+.header__backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translateX(120%);
+  display: none;
+  transition: var(--transition);
+  opacity: 0;
+}

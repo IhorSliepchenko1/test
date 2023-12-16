@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./public/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="response-head">
+          <a href="#" class="header__logo"
+            ><img src="./public/logo.svg" alt="Meltem" class="header__logo-img"
+          /></a>
+          <button class="header__btn button btn-rsp" onclick="openModal()">
+            Зв’язатись
+          </button>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+        <div class="burger-menu" id="header">
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li">
+                <a href="#" class="header__a">Компанія</a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__a">Продукція</a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__a">Статті</a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__a">Рішення</a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__a">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__info">
+            <a class="header__a-tel" href="tel:0 (800) 00-00-00"
+              >0 (800) 00-00-00</a
+            >
+
+            <button class="header__btn button" onclick="openModal()">
+              Зв’язатись
+            </button>
+
+            <div class="header__languages">
+              <label>
+                <input type="radio" name="radio" checked />
+                <div class="header__lang box">
+                  <span>UA</span>
+                </div>
+              </label>
+              ​
+              <label>
+                <input type="radio" name="radio" />
+                <div class="header__lang box">
+                  <span>RU</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main">
+        <section class="meltem-section container">
+          <div class="meltem-section__info">
+            <h1 class="meltem-section__title">Meltem</h1>
+            <p class="meltem-section__desc">
+              Meltem – це гарантовано якісне вентиляційне обладнання від
+              німецького заводу.
+            </p>
+            <button class="meltem-section__btn button">Продукція</button>
+          </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__img">
+                  <img
+                    class="swiper__image"
+                    src="./public/MaestroPro-Transparent-1536x1209 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper__info">
+                  <p class="swiper__desc">Відцентровий витяжний вентилятор</p>
+                  <h3 class="swiper__title">Meltem V-II 30-N</h3>
+                  <button class="swiper__btn button btn-sw">Детальніше</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__img">
+                  <img
+                    class="swiper__image"
+                    src="./public/MaestroPro-Transparent-1536x1209 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper__info">
+                  <p class="swiper__desc">Відцентровий витяжний вентилятор</p>
+                  <h3 class="swiper__title">Meltem V-II 30-N</h3>
+                  <button class="swiper__btn button btn-sw">Детальніше</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__img">
+                  <img
+                    class="swiper__image"
+                    src="./public/MaestroPro-Transparent-1536x1209 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper__info">
+                  <p class="swiper__desc">Відцентровий витяжний вентилятор</p>
+                  <h3 class="swiper__title">Meltem V-II 30-N</h3>
+                  <button class="swiper__btn button btn-sw">Детальніше</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar" id="scroll-bar"></div>
+        </section>
+
+        <section class="modal" id="myModal">
+          <span class="close-modal" onclick="closeModal()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+            >
+              <path
+                d="M0.435123 0.643617C1.01529 0.0658433 1.95592 0.0658433 2.53608 0.643617L21.4447 19.4744C22.0249 20.0521 22.0249 20.9889 21.4447 21.5667C20.8646 22.1444 19.9239 22.1444 19.3438 21.5667L0.435123 2.73592C-0.145041 2.15815 -0.145041 1.22139 0.435123 0.643617Z"
+                fill="#A2A2A2"
+              />
+              <path
+                d="M0.555279 21.3564C-0.0248851 20.7786 -0.0248851 19.8419 0.555279 19.2641L19.4639 0.433331C20.0441 -0.144443 20.9847 -0.144444 21.5649 0.43333C22.145 1.0111 22.145 1.94786 21.5649 2.52564L2.65624 21.3564C2.07607 21.9342 1.13544 21.9342 0.555279 21.3564Z"
+                fill="#A2A2A2"
+              />
+            </svg>
+          </span>
+
+          <h4 class="modal__title">Залишайте заявку</h4>
+          <p class="modal__subtitle">Ми зв’яжемося з вами найближчим часом.</p>
+
+          <form action="Відправить" method="post" class="form" id="myForm">
+            <input
+              class="name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ваше ім’я*"
+              required
+            />
+
+            <label for="phone" class="phone" id="lbl-phone">
+              <svg
+                width="26"
+                height="18"
+                viewBox="0 0 26 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="26" height="18" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2608_215"
+                      transform="matrix(0.00101363 0 0 0.00146413 -0.0189774 0)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2608_215"
+                    width="1024"
+                    height="683"
+                    xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAKrBAADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAcG/8QAGhABAAEFAAAAAAAAAAAAAAAAAAEEBhdTk//EABcBAQEBAQAAAAAAAAAAAAAAAAAHBgj/xAAfEQEAAQEJAAAAAAAAAAAAAAAAAlEBBAUWF5GS0eH/2gAMAwEAAhEDEQA/AJwAqicAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANriK6NVJ2gxFdGqk7QuY5l1cxykONvaoZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfxDMRXRqpO0GIro1UnaFzDVzHKQ429mULjWW/iGYiujVSdoMRXRqpO0LmGrmOUhxt7MoXGst/EMxFdGqk7QYiujVSdoXMNXMcpDjb2ZQuNZb+IZiK6NVJ2gxFdGqk7QuYauY5SHG3syhcay38QzEV0aqTtBiK6NVJ2hcw1cxykONvZlC41lv4hmIro1UnaDEV0aqTtC5hq5jlIcbezKFxrLfwAS5qgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z"
+                  />
+                </defs>
+              </svg>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+380-00-000-00-00*"
+                pattern="\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}"
+                maxlength="17"
+                required
+              />
+            </label>
+
+            <input
+              type="submit"
+              value="Відправить"
+              class="submit"
+              onclick="validateForm()"
+            />
+          </form>
+          <p class="modal__desc">
+            Натискаючи кнопку “Надіслати”, ви погоджуєтесь з
+            <span
+              ><a href="/" class="modal__a"
+                >Правилами обробки персональних даних</a
+              ></span
+            >.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

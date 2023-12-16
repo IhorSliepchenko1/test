@@ -1,0 +1,60 @@
+html {
+  font-size: 1px;
+
+  @include tablet {
+    font-size: 0.95px;
+  }
+
+  @include tablet-small {
+    font-size: 0.8px;
+  }
+
+  @include mobile {
+    font-size: 0.7px;
+  }
+}
+
+body {
+  font-family: var(--ff-r);
+  font-size: 16rem;
+  margin: 0;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+.wrapper {
+  margin-inline: auto;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.main {
+  flex: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(212, 227, 236, 0.3) -2.6%,
+    rgba(247, 249, 251, 0.3) 100%
+  );
+}
+
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+#menu {
+  cursor: pointer;
+  display: none;
+  color: var(--primary);
+  text-align: end;
+
+  position: relative;
+  @include desktop-small {
+    display: inline-block;
+    font-size: 30px;
+  }
+}
