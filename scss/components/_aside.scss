@@ -1,0 +1,99 @@
+.aside {
+     max-width: 306px;
+     box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+     background: rgb(255, 255, 255);
+     padding-left: 28px;
+     padding-right: 28px;
+     display: grid;
+     justify-content: center;
+     padding: 36px 28px 76px 28px;
+     position: relative;
+
+     &__logo {
+          margin-bottom: 51px;
+     }
+
+     &__ul {
+          display: grid;
+          gap: 19px;
+     }
+
+     &__li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 250px;
+          padding: 13px 14px 13px 13px;
+          border-radius: 8px;
+          transition: var(--transition);
+          color: var(--aside-text-color);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21px;
+          cursor: pointer;
+
+
+          &:hover {
+               background-color: var(--hover-bg);
+               color: var(--white);
+
+               svg {
+                    path {
+                         stroke: var(--white);
+                    }
+               }
+          }
+
+     }
+
+     .active-page {
+          background-color: var(--hover-bg);
+          color: var(--white);
+
+          svg {
+               path {
+                    stroke: var(--white);
+               }
+          }
+     }
+
+     &__item-slot {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+     }
+
+     &__footer {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          gap: 12px;
+          padding: 0 123px 76px 28px;
+     }
+
+     &__user-info {
+          display: grid;
+     }
+
+     &__name {
+          color: var(--black);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 1%;
+          text-align: left;
+     }
+
+     &__profession {
+          color: var(--profession-text);
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 1%;
+          text-align: left;
+     }
+}
+
+.dashboard {
+     display: none;
+}

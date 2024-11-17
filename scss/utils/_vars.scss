@@ -1,0 +1,28 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-sm: 320px;
+
+:root {
+  --ff: "Poppins", sans-serif;
+  --transition: 0.3s all ease-in-out;
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --aside-text-color: rgb(145, 151, 179);
+  --profession-text: rgb(117, 117, 117);
+  --table-header-text: rgb(181, 183, 192);
+  --table-body-text: rgb(41, 45, 50);
+  --green: rgb(22, 192, 152);
+  --green-dark: rgb(0, 135, 103);
+  --green-border: rgb(0, 176, 135);
+  --green-bg: rgba(22, 192, 152, 0.38);
+  --red: rgb(223, 4, 4);
+  --red-bg: rgb(255, 197, 197);
+  --pagination-btn-border: rgb(238, 238, 238);
+  --pagination-btn-bg: rgb(245, 245, 245);
+  --pagination-btn-text: rgb(64, 75, 82);
+  --hover-bg: rgb(89, 50, 234);
+  --bg-wrapper: rgb(250, 251, 255)
+}

@@ -1,0 +1,9 @@
+// ===== SCROLL CUSTOMIZE =====
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+* ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: black;
+}

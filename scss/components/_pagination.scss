@@ -1,0 +1,31 @@
+#pagination {
+     display: flex;
+     gap: 12px;
+     margin-top: 30.5px;
+     justify-content: end;
+}
+
+.prev-btn,
+.next-btn,
+.page-btn {
+     width: 26px;
+     height: 24px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10;
+     padding: 6px 9px 6px 9px;
+     border: 1px solid rgb(238, 238, 238);
+     border-radius: 4px;
+     background: rgb(245, 245, 245);
+     color: rgb(64, 75, 82);
+}
+
+.page-btn:disabled {
+     box-sizing: border-box;
+     border: 1px solid rgb(89, 50, 234);
+     border-radius: 4px;
+     color: var(--white);
+     background: rgb(89, 50, 234);
+}
