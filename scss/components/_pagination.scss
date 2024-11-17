@@ -1,8 +1,6 @@
 #pagination {
      display: flex;
      gap: 12px;
-     margin-top: 30.5px;
-     justify-content: end;
 }
 
 .prev-btn,
@@ -16,16 +14,30 @@
      align-items: center;
      gap: 10;
      padding: 6px 9px 6px 9px;
-     border: 1px solid rgb(238, 238, 238);
+     border: 1px solid var(--pagination-btn-border);
      border-radius: 4px;
-     background: rgb(245, 245, 245);
-     color: rgb(64, 75, 82);
+     background: var(--pagination-btn-bg);
+     color: var(--pagination-btn-text);
 }
 
 .page-btn:disabled {
      box-sizing: border-box;
-     border: 1px solid rgb(89, 50, 234);
+     border: 1px solid var(--hover-bg);
      border-radius: 4px;
      color: var(--white);
-     background: rgb(89, 50, 234);
+     background: var(--hover-bg);
+}
+
+.pagination-container {
+     margin-top: 30.5px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.pagination-desc {
+     color: var(--table-header-text);
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 21px;
 }
